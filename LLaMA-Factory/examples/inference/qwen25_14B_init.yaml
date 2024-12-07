@@ -1,0 +1,4 @@
+### examples/inference/llama3_lora_sft.yaml
+model_name_or_path: Qwen/Qwen2.5-14B-Instruct
+template: qwen
+infer_backend: huggingface #choices： [huggingface, vllm]

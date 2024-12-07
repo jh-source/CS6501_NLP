@@ -1,0 +1,12 @@
+module load miniforge/24.3.0-py3.11   
+module load cuda/12.2.2
+conda activate nlp_proj
+module load gcc/11.4.0
+
+API_PORT=8000 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen25_7B.yaml
+
+API_PORT=8001 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen25_7B_init.yaml
+
+API_PORT=8002 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen25_14B.yaml
+
+API_PORT=8003 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen25_14B_init.yaml

@@ -1,4 +1,13 @@
 { 
+  "climatex_test": {
+    "file_name": "climatex_test.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "system": "system"
+    }
+    },
   "climatex": {
   "file_name": "climatex_train.json",
   "columns": {

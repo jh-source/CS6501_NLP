@@ -1,0 +1,6 @@
+### examples/inference/llama3_lora_sft.yaml
+model_name_or_path: Qwen/Qwen2.5-7B-Instruct
+adapter_name_or_path: saves/Qwen2.5-7B-Instruct/lora/train_2024-12-04-14-45-27
+template: qwen
+finetuning_type: lora
+infer_backend: huggingface #choices： [huggingface, vllm]
