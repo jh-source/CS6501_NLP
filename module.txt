@@ -3,6 +3,8 @@ module load cuda/12.2.2
 conda activate nlp_proj
 module load gcc/11.4.0
 
+API_PORT=8000 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/llama2_7B_init.yaml
+
 API_PORT=8000 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen25_7B.yaml
 
 API_PORT=8001 CUDA_VISIBLE_DEVICES=0 llamafactory-cli api examples/inference/qwen25_7B_init.yaml
